@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<style>
+    .bg-image {
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStpZPnQDh-dUJmUG0uclXEE72nVhOl5_qZNg&s);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+    }
+
+    .bg-color {
+        background-color: rgba(0, 0, 0, 0.503);
+        height: 400px;
+    }
+</style>
+
+<body>
+
+    <!-- ========== Navbar ========== -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand text-uppercase fw-bold" href="#">My <span class="text-primary">Brand</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Inventory</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="bg-image">
+        <div class="bg-color d-flex flex-column align-items-center justify-content-center text-center">
+            <h2 class="text-white fw-bold display-5">Welcome to Our Store</h2>
+            <p class="text-white lead">Providing high-quality solutions for all your modern needs.</p>
+            <div>
+                <button class="btn btn-primary btn-lg">Explor Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product -->
+    <div class="container mt-5 mb-5">
+        <h3 class="text-center">Featured Products</h3>
+        <div class="row g-4">
+            <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+                <div class="border shadow rounded p-4">
+                    <h4>Premium Gadget</h4>
+                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.
+                    </p>
+                    <button class="btn btn-outline-primary">Buy Now</button>
+                </div>
+            </div>
+            <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+                <div class="border border-primary shadow rounded p-4">
+                    <h4>Premium Gadget</h4>
+                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.
+                    </p>
+                    <button class="btn btn-primary">Buy Now</button>
+                </div>
+            </div>
+            <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">
+                <div class="border shadow rounded p-4">
+                    <h4>Premium Gadget</h4>
+                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.
+                    </p>
+                    <button class="btn btn-outline-primary">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- text-nowrap = កុំំអោយអក្សរធ្លាក់ -->
+    <!-- ========== Table ========= -->
+    <section class="bg-light py-5">
+        <section class="container">
+            <h3 class="mb-3 text-center">Product Inventory</h3>
+
+            <div class="table-responsive">
+                <table class="table table-white table-bordered">
+                    <thead class="table-dark text-center text-nowrap">
+                        <tr>
+                            <th>ID</th>
+                            <th>Product Name</th>
+                            <th>Category</th>
+                            <th>Stock</th>
+                            <th>Price</th>
+                            <th>Active</th>
+                        </tr>
+                    </thead>
+                    <tbody class="align-middle text-nowrap">
+                        <tr>
+                            <td>1</td>
+                            <td>Computer</td>
+                            <td>MSI</td>
+                            <td>12</td>
+                            <td>120</td>
+                            <td class="text-center">
+                                <button class="btn btn-primary btn-sm"><i class="bi bi-credit-card"></i> Edit</button>
+                                <button class="btn btn-danger btn-sm"><i class="bi bi-trash3"></i> Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody class="align-middle text-nowrap">
+                        <tr>
+                            <td>1</td>
+                            <td>Computer</td>
+                            <td>MSI</td>
+                            <td>12</td>
+                            <td>120</td>
+                            <td class="text-center">
+                                <button class="btn btn-primary btn-sm"><i class="bi bi-credit-card"></i> Edit</button>
+                                <button class="btn btn-danger btn-sm"><i class="bi bi-trash3"></i> Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody class="align-middle text-nowrap">
+                        <tr>
+                            <td>2</td>
+                            <td>Computer</td>
+                            <td>MSI</td>
+                            <td>12</td>
+                            <td>120</td>
+                            <td class="text-center">
+                                <button class="btn btn-primary btn-sm"><i class="bi bi-credit-card"></i> Edit</button>
+                                <button class="btn btn-danger btn-sm"><i class="bi bi-trash3"></i> Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody class="align-middle text-nowrap">
+                        <tr>
+                            <td>3</td>
+                            <td>Computer</td>
+                            <td>MSI</td>
+                            <td>12</td>
+                            <td>120</td>
+                            <td class="text-center">
+                                <button class="btn btn-primary btn-sm"><i class="bi bi-credit-card"></i> Edit</button>
+                                <button class="btn btn-danger btn-sm"><i class="bi bi-trash3"></i> Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody class="align-middle text-nowrap">
+                        <tr>
+                            <td>4</td>
+                            <td>Computer</td>
+                            <td>MSI</td>
+                            <td>12</td>
+                            <td>120</td>
+                            <td class="text-center">
+                                <button class="btn btn-primary btn-sm"><i class="bi bi-credit-card"></i> Edit</button>
+                                <button class="btn btn-danger btn-sm"><i class="bi bi-trash3"></i> Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody class="align-middle text-nowrap">
+                        <tr>
+                            <td>5</td>
+                            <td>Computer</td>
+                            <td>MSI</td>
+                            <td>12</td>
+                            <td>120</td>
+                            <td class="text-center">
+                                <button class="btn btn-primary btn-sm"><i class="bi bi-credit-card"></i> Edit</button>
+                                <button class="btn btn-danger btn-sm"><i class="bi bi-trash3"></i> Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody class="align-middle text-nowrap">
+                        <tr>
+                            <td>6</td>
+                            <td>Computer</td>
+                            <td>MSI</td>
+                            <td>12</td>
+                            <td>120</td>
+                            <td class="text-center">
+                                <button class="btn btn-primary btn-sm"><i class="bi bi-credit-card"></i> Edit</button>
+                                <button class="btn btn-danger btn-sm"><i class="bi bi-trash3"></i> Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody class="align-middle text-nowrap">
+                        <tr>
+                            <td>7</td>
+                            <td>Computer</td>
+                            <td>MSI</td>
+                            <td>12</td>
+                            <td>120</td>
+                            <td class="text-center">
+                                <button class="btn btn-primary btn-sm"><i class="bi bi-credit-card"></i> Edit</button>
+                                <button class="btn btn-danger btn-sm"><i class="bi bi-trash3"></i> Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody class="align-middle text-nowrap">
+                        <tr>
+                            <td>8</td>
+                            <td>Computer</td>
+                            <td>MSI</td>
+                            <td>12</td>
+                            <td>120</td>
+                            <td class="text-center">
+                                <button class="btn btn-primary btn-sm"><i class="bi bi-credit-card"></i> Edit</button>
+                                <button class="btn btn-danger btn-sm"><i class="bi bi-trash3"></i> Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+    </section>
+
+    <!-- ========== form ========== -->
+    <div class="container">
+        <div class="row">
+            <div class="col-xxl-6 col-xl-8 col-lg-8 col-md-10 col-sm-12 col-12 m-auto">
+                <section class="py-5">
+                    <h3 class="mb-3 text-center">Contect Us</h3>
+                    <form class="rounded p-4 shadow-sm border">
+                        <div class="mb-3">
+                            <label class="form-label">full Name</label>
+                            <input class="form-control" type="text" placeholder="Enter Name">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Address & Email</label>
+                            <input class="form-control" type="email" placeholder="Enter address">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Message</label>
+                            <textarea style="height: 100px;" class="form-control" placeholder="Enter message..."></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <button class="btn btn-dark w-100">Send</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== footer =========== -->
+     <footer class="bg-dark p-3 mb-5">
+        <p class="text-white-50 mb-0 text-center"> &copy;2026 MyBrand Inc. All rights reserved.</p>
+     </footer>
+
+
+    <!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+
+    </script>
+</body>
+
+</html>
